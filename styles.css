@@ -1,0 +1,56 @@
+/* --------- cell & layering ---------- */
+.cell {
+    position: relative;   /* create stacking context */
+    width: 32px;
+    height: 32px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* slot or icon or canvas all absolutely layered */
+  .cell img,
+  .cell canvas {
+    position: absolute;
+    top: 0; left: 0;
+    width: 32px;
+    height: 32px;
+    image-rendering: pixelated;
+  }
+  
+  /* ---------- grid (3×3) ---------- */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 32px);
+    grid-template-rows:    repeat(3, 32px);
+    gap: 0;
+    margin-bottom: 4px;
+  }
+  
+  /* ---------- steps row ---------- */
+  .steps {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+  
+  /* ---------- result card ---------- */
+  .result {
+    margin-bottom: 24px;
+  }
+  
+  /* ---------- metadata ---------- */
+  .result-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 8px;
+  }
+  
+  .accuracy-badge {
+    font-weight: bold;
+  }
+  .text-sm { font-size: .875rem; }
+  .text-gray-300 { color: #D1D5DB; }
+  
