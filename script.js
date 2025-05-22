@@ -25,6 +25,18 @@ const recipeFiles = [
   './recipes_1.json',
   './recipes_2.json',
   './recipes_3.json',
+  './recipes_4.json',
+  './recipes_5.json',
+  './recipes_6.json',
+  './recipes_7.json',
+  './recipes_8.json',
+  './recipes_9.json',
+  './recipes_10.json',
+  './recipes_11.json',
+  './recipes_12.json',
+  './recipes_13.json',
+  './recipes_14.json',
+  './recipes_15.json',
 ];
 
 let recipes = [];

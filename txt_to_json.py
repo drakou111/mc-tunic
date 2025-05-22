@@ -7,11 +7,11 @@ with open("recipes.json", "r") as f:
     data = json.load(f)
 
 # Initialize 4 empty buckets
-buckets = {i: [] for i in range(4)}
+buckets = {i: [] for i in range(16)}
 
 # Distribute recipes randomly and evenly
 for recipe in data:
-    bucket_index = random.randint(0, 3)  # randomly pick 0,1,2 or 3
+    bucket_index = random.randint(0, 15)  # randomly pick 0,1,2 or 3
     buckets[bucket_index].append(recipe)
 
 # Create output directory
