@@ -140,6 +140,7 @@ function imgCell(src) {
   img.src = `images/${src}`;
   img.width = img.height = CELL_SIZE;
   img.style.imageRendering = 'pixelated';
+  img.alt = src
   return wrapCell(img);
 }
 
